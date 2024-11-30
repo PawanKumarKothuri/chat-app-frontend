@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 
 // Replace with your deployed backend URL
-const SOCKET_URL = "https://chat-app-backend-t7w5.onrender.com";
+// const SOCKET_URL = "https://chat-app-backend-t7w5.onrender.com";
+
+const socket = io("https://chat-app-backend-t7w5.onrender.com");
+
 
 function App() {
   const [message, setMessage] = useState("");
